@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#box {
+    
+}
+
+@keyframes mover {
+    to {
+        background-color: white;
+        transform: translate(200px, 0px);
+    }
+
+}

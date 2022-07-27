@@ -1,0 +1,16 @@
+body {
+  /* used to initialize a counter */
+  counter-set: section;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+h1::before {
+  /* every new h1, the counter will be incremented */
+  counter-increment: section;
+  /* use counter(name) to return a value from the counter */
+  content: 'Section ' counter(section) ": ";
+}

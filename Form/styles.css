@@ -1,0 +1,11 @@
+:required {
+  border: 1px solid red;
+}
+
+:optional {
+  border: 1px solid green;
+}
+
+::selection {
+  background-color: yellow;
+}

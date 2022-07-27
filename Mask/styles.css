@@ -1,0 +1,4 @@
+img {
+  width: 500px;
+  mask-image: linear-gradient(to bottom, transparent 25%, rgb(235, 13, 13) 75%);
+}

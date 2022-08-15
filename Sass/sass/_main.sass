@@ -1,0 +1,58 @@
+@use './includes'
+
+body
+    background-color: includes.$bg-color
+    color: includes.$text-color
+    a
+        color: includes.$text-color
+        text-decoration: none
+        transition: 0.4s
+
+    ul
+        list-style: none
+
+
+.gallery
+    @include includes.mixins-flex-center
+    @include includes.mixins-container(0)
+
+    flex-wrap: wrap
+    justify-content: space-between
+
+    @include includes.mixins-mobile
+        flex-direction: column
+        justify-content: flex-start
+
+    &-card // .gallery-card
+        width: 31%
+        height: 400px
+        margin-bottom: 4%
+        @include includes.mixins-flex-center
+
+        @include includes.mixins-mobile
+            width: 90%
+            margin-bottom: 6%
+
+        flex-direction: column
+        color: includes.$primary-color
+
+        &-title
+            font-size: 2rem
+            font-weight: 300
+            margin-bottom: 1rem
+
+        &-btn
+            padding: 0.6rem 2rem
+            border: 2px solid includes.$primary-color
+            color: includes.$primary-color
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 1px
+
+            &:hover
+                background-color: includes.$primary-color
+                color: includes.$bg-color
+
+    @for $i from 1 through 9
+        #card-#{$i}
+            @include includes.mixins-bg-img(nth(includes.$images, $i))

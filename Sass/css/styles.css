@@ -104,7 +104,7 @@ body ul {
   font-weight: 300;
   margin-bottom: 1rem;
 }
-.gallery-card-btn {
+.gallery-card-btn, .btn-error {
   padding: 0.6rem 2rem;
   border: 2px solid #f5f4f4;
   color: #f5f4f4;
@@ -112,7 +112,7 @@ body ul {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.gallery-card-btn:hover {
+.gallery-card-btn:hover, .btn-error:hover {
   background-color: #f5f4f4;
   color: #0c0c0c;
 }
@@ -247,6 +247,10 @@ footer span {
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
+}
+
+.btn-error {
+  background-color: #20c997;
 }
 
 /*# sourceMappingURL=styles.css.map */

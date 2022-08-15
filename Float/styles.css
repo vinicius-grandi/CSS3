@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div {
+  background-color: rgb(40, 40, 116);
+  width: 200px;
+  text-align: center;
+  line-height: 200px;
+  height: 200px;
+}
+
+.first-example {
+  float: inline-start;
+}
+
+.second-example {
+  background-color: aqua;
+  float: right;
+}
+
+p {
+  float: right;
+}

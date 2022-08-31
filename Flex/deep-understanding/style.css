@@ -1,0 +1,16 @@
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.columns > * {
+  width: 100%;
+  flex-basis: 33%;
+}
+
+.col {
+  /* o tamanho base de cada um dos itens é 100%, o que faz com que todos eles tenham o mesmo espaço na flexbox no final. */
+  width: 100%;
+  /* flex: 0 */
+}
